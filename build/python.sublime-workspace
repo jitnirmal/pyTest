@@ -1,0 +1,714 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"row",
+				"rowData"
+			],
+			[
+				"Data",
+				"DataHandler"
+			],
+			[
+				"str",
+				"strlen"
+			],
+			[
+				"Mar",
+				"MarketData"
+			],
+			[
+				"market",
+				"MarketBook"
+			],
+			[
+				"for",
+				"fourth"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/jitni/code/python/Codility/BigSort.py",
+			"settings":
+			{
+				"buffer_size": 817,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/Codility/str_append.py",
+			"settings":
+			{
+				"buffer_size": 972,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "def ArePair(opening,closing):\n\tif opening == '(' and closing == ')':\n\t\treturn True\n\telif opening == '{' and closing == '}': \n\t\treturn True\n\telif opening == '[' and closing == ']': \n\t\treturn True\n\treturn False;\n\n\ndef checkForBalancedParantheses(exp):\n\tS=[]\n\tfor i in range(len(exp)):\n\t\tif (exp[i] == '(' or exp[i] == '{' or exp[i] == '['):\n\t\t\tS.append(exp[i])\n\t\telif (exp[i] == ')' or exp[i] == '}' or exp[i] == ']'):\n\t\t\tif (not S) or (ArePair(S[len(S)-1], exp[i])) == False:\n\t\t\t\treturn False\n\t\t\telse:\n\t\t\t\tS.pop()\n\tif not S:\n\t\treturn True\n\telse:\n\t\treturn False\n\n\ndef testParanthesesBalanced():\n\texpression = \"[[]]{}())\";\n\tif (checkForBalancedParantheses(expression)):\n\t\tprint(\"Balanced\")\n\telse:\n\t\tprint(\"Not Balanced\")\n\ntestParanthesesBalanced()",
+			"file": "/C/Users/jitni/code/python/Codility/balancedParenthesis.py",
+			"file_size": 772,
+			"file_write_time": 131873932785115128,
+			"settings":
+			{
+				"buffer_size": 744,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/multithreading/BlockingQ.py",
+			"settings":
+			{
+				"buffer_size": 1603,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "from memory_profiler import profile\n\n@profile\ndef my_func():\n    a = [1] * (10 ** 6)\n    b = [2] * (2 * 10 ** 7)\n    del b\n    return a\n\nif __name__ == '__main__':\n    my_func()",
+			"file": "/C/Users/jitni/code/python/multithreading/profile.py",
+			"file_size": 185,
+			"file_write_time": 131873955969290128,
+			"settings":
+			{
+				"buffer_size": 177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/multithreading/profile2.py",
+			"settings":
+			{
+				"buffer_size": 440,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "import threading\nimport time\n\n\nclass MyThread(threading.Thread):\n    def __init__(self, name, delay):\n        threading.Thread.__init__(self)\n        self.name = name\n        self.delay = delay\n\n    def run(self):\n        counter = 10\n\n        while counter:\n            time.sleep(self.delay)\n            print('Thread %s counting down: %i...' % (self.name, counter))\n            counter -= 1\n\n\ndef TestThread():\n\tthread1 = MyThread('A', 0.5)\n import pdb; pdb.set_trace()  # breakpoint 7188f728 //\n\tthread1.start()\n\tthread1.join()\n\tprint('Finished.')\n\n\nTestThread()\n",
+			"file": "/C/Users/jitni/code/python/multithreading/Test.py",
+			"file_size": 512,
+			"file_write_time": 131868954704225925,
+			"settings":
+			{
+				"buffer_size": 567,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/performance/basic_perf.py",
+			"settings":
+			{
+				"buffer_size": 762,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/basics/BhavCopy/DataHandler.py",
+			"settings":
+			{
+				"buffer_size": 1186,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/unittests/TestQueue.py",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jitni/code/python/Codility/maxSum.py",
+			"settings":
+			{
+				"buffer_size": 342,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/python-build.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build With: Python"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 270.0,
+		"history":
+		[
+			"python -m memory_profiler \"C:\\Users\\jitni\\code\\python\\multithreading\\profile.py\"",
+			"python -u \"C:\\Users\\jitni\\code\\python\\multithreading\\profile.py\""
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/jitni/code/python/Codility",
+		"/C/Users/jitni/code/python/performance"
+	],
+	"file_history":
+	[
+		"/C/Users/jitni/AppData/Roaming/Sublime Text 3/Packages/Python Breakpoints/Default (Windows).sublime-keymap",
+		"/C/Users/jitni/code/python/Codility/balancedParenthesis.py",
+		"/C/Users/jitni/code/python/Codility/BigSort",
+		"/C/Users/jitni/code/python/patterns/Factory.py",
+		"/C/Users/jitni/code/python/patterns/Observer.py",
+		"/C/Users/jitni/code/python/basics/utils.py",
+		"/C/Users/jitni/code/python/basics/words.py",
+		"/C/Users/jitni/code/python/basics/data/bhavCopy.csv",
+		"/C/Users/jitni/code/python/multithreading/Queue.py",
+		"/C/Users/jitni/code/python/basics/types.py",
+		"/C/Users/jitni/code/python/unittests/TestQueue.py",
+		"/C/Users/jitni/code/python/datastructures/deque.py",
+		"/C/Users/jitni/code/python/datastructures/list.py",
+		"/C/Users/jitni/code/python/datastructures/tuple.py",
+		"/C/Users/jitni/code/python/datastructures/dict.py",
+		"/C/Users/jitni/code/python/basics/BhavCopy/DataHandler.py",
+		"/C/Users/jitni/code/python/patterns/utils.py",
+		"/C/Users/jitni/code/python/datastructures/stack.py",
+		"/C/Users/jitni/code/python-package/python-package-boilerplate-master/tests/unit/test_stack.py",
+		"/C/Users/jitni/code/python-package/python-package-boilerplate-master/tests/unit/test_example.py",
+		"/C/Users/jitni/code/python/multithreading/CheckPrime.py",
+		"/C/Users/jitni/code/python/datastructures/__init__.py",
+		"/C/Users/jitni/AppData/Roaming/Sublime Text 3/Packages/User/python-build.sublime-build",
+		"/C/Users/jitni/code/python/unittests/TestQueue",
+		"/C/Users/jitni/code/python/tcp/client.py"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"findPaths",
+			"allPaths",
+			"print",
+			"maze",
+			"#\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"findValidPaths",
+			"validPaths",
+			"arr",
+			"a"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/jitni/code/python/Codility/BigSort.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/jitni/code/python/Codility/str_append.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								633,
+								637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/jitni/code/python/Codility/balancedParenthesis.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/jitni/code/python/multithreading/BlockingQ.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1324,
+								1324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/jitni/code/python/multithreading/profile.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/jitni/code/python/multithreading/profile2.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/jitni/code/python/multithreading/Test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 567,
+						"regions":
+						{
+							"bp-7188f728":
+							{
+								"flags": 16,
+								"icon": "Packages/Theme - Default/common/circle.png",
+								"regions":
+								[
+									[
+										444,
+										499
+									]
+								],
+								"scope": "invalid"
+							}
+						},
+						"selection":
+						[
+							[
+								567,
+								567
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/jitni/code/python/performance/basic_perf.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								762,
+								715
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/jitni/code/python/basics/BhavCopy/DataHandler.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								800
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/jitni/code/python/unittests/TestQueue.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/jitni/code/python/Codility/maxSum.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								342,
+								342
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 298.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "python.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 385.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
